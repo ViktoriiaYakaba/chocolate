@@ -32,7 +32,7 @@
 
           <ul class="list-navigation">
             <li class="list-navigation-item">
-              <a href="#" class="link-navigation">Home</a>
+              <a href="#./index.html" class="link-navigation">Home</a>
             </li>
             <li class="list-navigation-item">
               <a href="#made" class="link-navigation">How it’s made?</a>
@@ -500,8 +500,6 @@
                   class="social-img"
                   width="24"
                   height="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 32 32"
                 >
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
@@ -512,8 +510,6 @@
                   class="social-img"
                   width="24"
                   height="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 32 32"
                 >
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
@@ -524,8 +520,6 @@
                   class="social-img"
                   width="24"
                   height="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 32 32"
                 >
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
@@ -566,5 +560,83 @@
         </nav>
       </div>
     </footer>
+    <div class="backdop">
+      <div class="modal">
+        <button type="button" class="btn-modal">
+          <svg
+            class="btn-modal-item"
+            width="28"
+            height="28"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="title-modal">
+          LEAVE A REVIEW ABOUT
+          <span class="span-title-modal">OUR CHOCOLATE</span>
+        </h2>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Name</label>
+            <div class="modal-input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-input"
+                placeholder="Enter name"
+                id="user-name"
+              />
+            </div>
+            <label for="use-email" class="modal-label">Email</label>
+            <div class="modal-input-wrap">
+              <input
+                type="email"
+                name="email"
+                class="modal-input"
+                placeholder="Enter email"
+                id="user-email"
+              />
+             
+            </div>
+            <label for="use-number" class="modal-label">Phone number</label>
+            <div class="modal-input-wrap">
+              <input
+                type="text"
+                name="number"
+                class="modal-input"
+                placeholder="Phone number"
+                id="use-number"
+              />
+              
+            </div>
+            <label for="user-comment" class="modal-label">Comment </label>
+            <div class="modal-input-comment">
+              <textarea
+                id="user-comment"
+                name="user-comment"
+                placeholder="Enter text"
+                class="comment-input"
+              ></textarea>
+            </div>
+                 </div>
+          <div class="privasy">
+            <input
+              id="user-privacy"
+              type="checkbox"
+              value="true"
+              name="user-privacy"
+              class="chek-privasy "
+            />
+            <label for="user-privacy" class="text-privasy"
+             >I accept the terms and conditions of the<span>
+              <a href="" class="privasy-link">Privacy Policy</a></span></label
+            >
+          </div>
+          <button type="button" class="bnt-send">Send</button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
   </body>
 </html>
