@@ -42,6 +42,9 @@
             </li>
           </ul>
         </nav>
+           <svg width="24" height="16" viewBox="0 0 24 16" class="header-modal" xmlns="http://www.w3.org/2000/svg">
+  <path d="M1.5 8H22.5M1.5 1H22.5M1.5 15H22.5" stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
         <ul class="social-list">
           <li class="social-list-item">
             <a href="facebook" class="link-icon"></a>
@@ -63,13 +66,13 @@
           </li>
         </ul>
       </div>
+    
     </header>
     <main>
       <section class="title">
         <div class="container title-container">
           <h1 class="titl-text">
-            Treat yourself or a loved one to<br />
-            our finest ingredients for a moment of pure delight!
+            Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
           </h1>
           <div class="button-title">
             <button type="button" class="btn-buy">Buy now</button>
@@ -203,50 +206,68 @@
         </div>
       </section>
       <section class="made" id="made">
-        <div class="container">
-          <h2 class="made-title">
-            How it’s <span class="span-title">made</span>?
-          </h2>
-          <div class="made-container">
-            <img
-              src="./images/title-img.jpg"
-              alt="chocolate"
-              width="600"
-              height="400"
-              class="made-img"
-            />
-            <div class="list-made-flex">
-              <h3 class="made-title-item">
+        <div class="container made-container">
+          <h2 class="made-title section-title">How it’s <span class="span-made">made</span>?</h2>
+          <div class="made-wrap">
+            <picture>
+              <source
+                srcset="./images/image-desk.jpg 1x, ./images/image-desk-2x.jpg 2x"
+                media="(min-width:1166px)"
+              />
+              <source
+                srcset="
+                  ./images/image.jpg   1x,
+                  ./images/image-2x.jpg 2x
+                "
+                media="(min-width:768px)"
+              />
+              <source
+                srcset="
+                  ./images/image-tab.jpg   1x,
+                  ./images/image-tab-2x.jpg 2x
+                "
+                media="(min-width:320px)"
+              />
+              <img
+                src="./images/image.jpg"
+                alt="liquid chocolate"
+                width="600"
+                class="made-img"
+              />
+            </picture>
+
+            <div class="made-content">
+              <h3 class="made-subtitle">
                 Try our chocolates today and discover the perfect balance of
                 flavor
               </h3>
               <ul class="made-list">
-                <li class="made-list-item">
-                  <p class="made-paragraf">
+                <li class="made-item">
+                  <p class="made-item-text">
                     Heat the milk in a saucepan without bringing it to a boil.
                     Add sugar and cocoa powder.
                   </p>
                 </li>
-                <li class="made-list-item">
-                  <p class="made-paragraf">
+                <li class="made-item">
+                  <p class="made-item-text">
                     At the same time, prepare a water bath. Melt the butter on
                     it.
                   </p>
                 </li>
-                <li class="made-list-item">
-                  <p class="made-paragraf">
+                <li class="made-item">
+                  <p class="made-item-text">
                     "Mix" the milk mixture and already liquid butter. Mix
                     thoroughly with a silicone spatula so that the mass becomes
                     uniform and silky.
                   </p>
                 </li>
-                <li class="made-list-item">
-                  <p class="made-paragraf">
+                <li class="made-item">
+                  <p class="made-item-text">
                     Heat the mixture over low heat, letting it barely boil.
                   </p>
                 </li>
-                <li class="made-list-item">
-                  <p class="made-paragraf">
+                <li class="made-item">
+                  <p class="made-item-text">
                     Pour the chocolate into special containers (can be replaced
                     with ice molds). Allow to cool and harden.
                   </p>
@@ -491,7 +512,26 @@
             <br />cure for a bad day
           </h2>
 
-          <div class="social-container">
+          
+
+          <div class="contacts-container">
+            <address class="footer-contacts">
+              <p class="footer-paragraf">Contact us</p>
+              <ul class="contacts-list">
+                <li class="contacts-list-item">
+                  <a href="tel:+380684439426" class="address-link"
+                    >+380 (68) 443-94-26</a
+                  >
+                </li>
+                <li class="contacts-list-item">
+                  <a href="mailto:simplychoc@gmail.com" class="address-link"
+                    >simplychoc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+           <div class="social-container">
             <p class="paragraf-social">Social networks</p>
             <ul class="list-social">
               <li class="list-social-item">
@@ -526,24 +566,6 @@
               </li>
             </ul>
           </div>
-
-          <div class="contacts-container">
-            <address class="footer-contacts">
-              <p class="footer-paragraf">Contact us</p>
-              <ul class="contacts-list">
-                <li class="contacts-list-item">
-                  <a href="tel:+380684439426" class="address-link"
-                    >+380 (68) 443-94-26</a
-                  >
-                </li>
-                <li class="contacts-list-item">
-                  <a href="mailto:simplychoc@gmail.com" class="address-link"
-                    >simplychoc@gmail.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-          </div>
         </div>
         <nav class="nav-footer">
           <ul class="footer-list">
@@ -560,13 +582,13 @@
         </nav>
       </div>
     </footer>
-    <div class="backdop">
+    <div class="backdop ">
       <div class="modal">
         <button type="button" class="btn-modal">
           <svg
             class="btn-modal-item"
-            width="28"
-            height="28"
+            width="20"
+            height="20"
           >
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
