@@ -1,4 +1,9 @@
 {
   "cSpell.caseSensitive": false,
-  "cSpell.enabled": false
+  "cSpell.enabled": false,
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#1C3312",
+    "titleBar.activeBackground": "#274819",
+    "titleBar.activeForeground": "#F6FBF4"
+  }
 }
